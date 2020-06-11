@@ -1,0 +1,313 @@
+/** {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#toolbar {
+  margin-top: 1rem;
+  width: 100vh;
+  border: .09rem solid hsl(150, 78%, 51%);
+  padding: 1rem;
+  border-bottom: 0; 
+  background-color: hsl(150, 78%, 51%);
+  font-weight: bold;
+}
+
+#editor {
+  width: 100vh;
+  height: 50vh;
+  border: .09rem solid hsl(150, 78%, 51%);
+  padding: 1rem;
+  resize: vertical;
+}
+
+#toolbar-preview {
+  margin-top: 1.5rem;
+  width: 140vh;
+  border: .09rem solid hsl(287, 35%, 78%);
+  padding: 1rem;
+  border-bottom: 0; 
+  background-color: hsl(287, 35%, 78%);
+  font-weight: bold;
+}
+
+#preview {
+   width: 140vh;
+  background-color: hsl(287, 5%, 95%);
+  border: .09rem solid hsl(287, 35%, 78%);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  border-bottom: 0.1rem solid hsl(258, 6%, 31%);
+}
+
+h2 {
+  border-bottom: 0.09rem solid hsl(258, 5%, 43%);
+}
+
+blockquote {
+  border-left: 0.1rem solid hsl(258, 32%, 58%);
+  padding-left: 1rem;
+}
+
+code {
+  background-color: white;
+  padding: 0.1rem;
+ display: inline-block;
+}
+
+@media only screen and (min-width: 1200px) {
+  #toolbar {
+  margin-top: 1rem;
+  width: 100vh;
+  border: .09rem solid hsl(150, 78%, 51%);
+  padding: 1rem;
+  border-bottom: 0; 
+  background-color: hsl(150, 78%, 51%);
+  font-weight: bold;
+  
+}
+
+#editor {
+  width: 100vh;
+  height: 50vh;
+  border: .09rem solid hsl(150, 78%, 51%);
+  padding: 1rem;
+  resize: vertical;
+}
+
+#toolbar-preview {
+  margin-top: 1.5rem;
+  width: 140vh;
+  border: .09rem solid hsl(287, 35%, 78%);
+  padding: 1rem;
+  border-bottom: 0; 
+  background-color: hsl(287, 35%, 78%);
+  font-weight: bold;
+}
+
+#preview {
+   width: 140vh;
+  background-color: hsl(287, 5%, 95%);
+  border: .09rem solid hsl(287, 35%, 78%);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+}
+
+@media only screen and (min-width: 992px) {
+  #toolbar {
+  margin-top: 1rem;
+  width: 90vh;
+  border: .09rem solid hsl(150, 78%, 51%);
+  padding: 1rem;
+  border-bottom: 0; 
+  background-color: hsl(150, 78%, 51%);
+  font-weight: bold;
+}
+
+#editor {
+  width: 90vh;
+  height: 50vh;
+  border: .09rem solid hsl(150, 78%, 51%);
+  padding: 1rem;
+  resize: vertical;
+}
+
+#toolbar-preview {
+  margin-top: 1.5rem;
+  width: 130vh;
+  border: .09rem solid hsl(287, 35%, 78%);
+  padding: 1rem;
+  border-bottom: 0; 
+  background-color: hsl(287, 35%, 78%);
+  font-weight: bold;
+}
+
+#preview {
+   width: 130vh;
+  background-color: hsl(287, 5%, 95%);
+  border: .09rem solid hsl(287, 35%, 78%);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+}
+
+@media only screen and (min-width: 768px) {
+  #toolbar {
+  margin-top: 1rem;
+  width: 80vh;
+  border: .09rem solid hsl(150, 78%, 51%);
+  padding: 1rem;
+  border-bottom: 0; 
+  background-color: hsl(150, 78%, 51%);
+  font-weight: bold;
+  
+}
+
+#editor {
+  width: 80vh;
+  height: 50vh;
+  border: .09rem solid hsl(150, 78%, 51%);
+  padding: 1rem;
+  resize: vertical;
+}
+
+#toolbar-preview {
+  margin-top: 1.5rem;
+  width: 120vh;
+  border: .09rem solid hsl(287, 35%, 78%);
+  padding: 1rem;
+  border-bottom: 0; 
+  background-color: hsl(287, 35%, 78%);
+  font-weight: bold;
+}
+
+#preview {
+   width: 120vh;
+  background-color: hsl(287, 5%, 95%);
+  border: .09rem solid hsl(287, 35%, 78%);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+}
+
+@media only screen and (min-width: 600px) {
+  #toolbar {
+  margin-top: 1rem;
+  width: 70vh;
+  border: .09rem solid hsl(150, 78%, 51%);
+  padding: 1rem;
+  border-bottom: 0; 
+  background-color: hsl(150, 78%, 51%);
+  font-weight: bold;
+  
+}
+
+#editor {
+  width: 70vh;
+  height: 50vh;
+  border: .09rem solid hsl(150, 78%, 51%);
+  padding: 1rem;
+  resize: vertical;
+}
+
+#toolbar-preview {
+  margin-top: 1.5rem;
+  width: 110vh;
+  border: .09rem solid hsl(287, 35%, 78%);
+  padding: 1rem;
+  border-bottom: 0; 
+  background-color: hsl(287, 35%, 78%);
+  font-weight: bold;
+}
+
+#preview {
+   width: 110vh;
+  background-color: hsl(287, 5%, 95%);
+  border: .09rem solid hsl(287, 35%, 78%);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+}
+
+@media only screen and (min-width: 480px) {
+  #toolbar {
+  margin-top: 1rem;
+  width: 50vh;
+  border: .09rem solid hsl(150, 78%, 51%);
+  padding: 1rem;
+  border-bottom: 0; 
+  background-color: hsl(150, 78%, 51%);
+  font-weight: bold;
+  
+}
+
+#editor {
+  width: 50vh;
+  height: 50vh;
+  border: .09rem solid hsl(150, 78%, 51%);
+  padding: 1rem;
+  resize: vertical;
+}
+
+#toolbar-preview {
+  margin-top: 1.5rem;
+  width: 70vh;
+  border: .09rem solid hsl(287, 35%, 78%);
+  padding: 1rem;
+  border-bottom: 0; 
+  background-color: hsl(287, 35%, 78%);
+  font-weight: bold;
+}
+
+#preview {
+   width: 70vh;
+  background-color: hsl(287, 5%, 95%);
+  border: .09rem solid hsl(287, 35%, 78%);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+}
+
+@media only screen and (max-width: 480px) {
+  #toolbar {
+  margin-top: 1rem;
+  width: 48vh;
+  border: .09rem solid hsl(150, 78%, 51%);
+  padding: 1rem;
+  border-bottom: 0; 
+  background-color: hsl(150, 78%, 51%);
+  font-weight: bold;
+  
+}
+
+#editor {
+  width: 48vh;
+  height: 40vh;
+  border: .09rem solid hsl(150, 78%, 51%);
+  padding: 1rem;
+  resize: vertical;
+}
+
+#toolbar-preview {
+  margin-top: 1.5rem;
+  width: 48vh;
+  border: .09rem solid hsl(287, 35%, 78%);
+  padding: 1rem;
+  border-bottom: 0; 
+  background-color: hsl(287, 35%, 78%);
+  font-weight: bold;
+}
+
+#preview {
+   width: 48vh;
+  background-color: hsl(287, 5%, 95%);
+  border: .09rem solid hsl(287, 35%, 78%);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+  
+code {
+  background-color: white;
+  padding: 0.1rem;
+ display: inline-block;
+ font-size: 0.6rem;
+}
+  img{
+    width: 50vh;
+  }
+}
